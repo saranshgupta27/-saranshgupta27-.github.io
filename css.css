@@ -16,12 +16,11 @@ body {
   font-family: Montserrat;
   height: 100%;
   width: 100%;
-
 }
 #welcome-section {
   width: 100%;
   height: 80vh;
-  
+
   display: grid;
   grid-template-columns: 10% auto auto 80px;
   grid-template-rows: repeat(4, 1fr);
@@ -29,9 +28,7 @@ body {
   grid-row-gap: 4px;
   padding: 5%;
   padding-bottom: 0;
- 
 }
-
 
 #designer-logo {
   grid-area: 1 / 1 / 2 / 2;
@@ -98,15 +95,16 @@ body {
   margin: 100px 5vw 0 5vw;
   margin-bottom: 0;
   border-radius: 80px;
-  
-  background-color: rgb(212, 212, 212);
+
+  /* background-color: rgb(212, 212, 212); */
 }
 #project h1 {
   font-size: 3rem;
   padding-top: 80px;
   text-align: center;
   color: rgb(0, 0, 0);
-  font-weight: lighter;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
 }
 
 #pgrid {
@@ -141,7 +139,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 #last-d,
@@ -222,95 +219,87 @@ body {
 .content:hover .content-overlay,
 .content:hover .content-details {
   opacity: 1;
- 
 }
-#contact h1,#about h1{
+#contact h1,
+#about h1 {
   text-align: center;
   font-weight: bold;
   padding: 100px;
-  padding-top:50px ;
-  padding-bottom: 0;;
+  padding-top: 50px;
+  padding-bottom: 0;
+  font-family: Helvetica, sans-serif;
 }
-#contact p,#about p{
+#contact p,
+#about p {
   text-align: center;
-  padding: 30px 90px 0 90px ;
-  margin: 0px 20% 0 20% ;
+  padding: 30px 90px 0 90px;
+  margin: 0px 20% 0 20%;
   color: rgb(128, 128, 128);
-  
 }
 
-#links img{
-margin-top: 20px;
+#links img {
+  margin-top: 20px;
   max-width: 25px;
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 20px;
 }
-#links{ display: flex;
-justify-content: center;
-align-items: center;
-margin: -10px 30% 0px 30% ;
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 30% 0px 30%;
 }
-#links a:hover{ 
+#links a:hover {
   transform: scale(1.6);
+}
+
+@media (max-width: 768px) {
+  #bio-1 {
+    font-size: 2.5em;
+  }
+  #bio-2 {
+    font-size: 1.5em;
   }
 
+  #contact p,
+  #about p {
+    padding: 10px 10px 0 10px;
+    margin: 0px 20% 0 20%;
+  }
+  #navbar-m a {
+    font-size: 1rem;
+  }
+  #navbar-m {
+    grid-area: 2 / 4 / 4 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 20% 0 20%;
+  }
+  #pgrid {
+    padding: 40px;
+  }
+  #p1,
+  #p4,
+  #p5,
+  #p6 {
+    height: 400px;
+    width: 400px;
+  }
 
+  #p3,
+  #p2,
+  #p7,
+  #p8 {
+    height: 200px;
+    width: 100%;
+  }
 
-@media (max-width: 768px)
-{
-#bio-1{
-  font-size:2.5em;
-}
-  #bio-2{
-  font-size: 1.5em;
-}
-
-#contact p,#about p{
-  padding: 10px 10px 0 10px ;
-  margin: 0px 20% 0 20% ;
-  
-  
-}
-#navbar-m a{
-  font-size: 1rem;
-}
-#navbar-m{
-  grid-area: 2 / 4 / 4 / 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 0 20% 0 20%;
- 
-}
-#pgrid {
-
-  padding: 40px;
-
-}
-#p1,
-#p4,
-#p5,
-#p6 {
-  height: 400px;
-  width: 400px;
-}
-
-#p3,
-#p2,
-#p7,
-#p8 {
-  height: 200px;
-  width: 100%;
-}
-
-#pgrid img {
-  height: 100%;
-
-}
-
-
+  #pgrid img {
+    height: 100%;
+  }
 }
